@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Rasa Buah</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="buah_logo.png" alt="Logo Rasa Buah" width="50px">
+                <h1>RASA BUAH</h1>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <h1>Selamat Datang di Rasa Buah</h1>
+            <p>Selamat datang di Toko Buah Segar! Kami menyediakan berbagai pilihan buah segar berkualitas tinggi,
+                langsung dari kebun terbaik. Temukan beragam buah lokal dan impor yang kaya akan rasa dan nutrisi, siap
+                menemani keseharian Anda.</p>
+            <a href="#Products" class="hero-button">Belanja Sekarang</a>
+        </section>
+
+        <section class="about-section" id="Home">
+            <h2>RASA BUAH</h2>
+            <img src="toko buah.jpg" alt="Toko Rasa Buah" class="about-image">
+            <p>Toko buah yang menyediakan beragam pilihan buah yang segar dan berkualitas tinggi. Dengan koleksi buah
+                lokal dan impor, Toko Rasa Buah memberikan pengalaman berbelanja yang menyenangkan. Temukan buah-buahan
+                terbaik untuk kesehatan Anda, di Toko Rasa Buah!</p>
+            <a href="#More" class="button">Selengkapnya</a>
+        </section>
+
+        <section class="services" id="About">
+            <h3>Layanan Kami</h3>
+            <ul class="service-list">
+                <li>
+                    <img src="antar cepat.jpg" alt="Pengantaran Cepat">
+                    <div>
+                        <h3>Pengantaran Cepat</h3>
+                        <p>Layanan pengantaran cepat langsung ke rumah untuk memastikan produk tetap segar.</p>
+                        <p class="price">Rp. 30.000/pengantaran</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="paket buah acara.jpg" alt="Paket Buah untuk Acara">
+                    <div>
+                        <h3>Paket Buah untuk Acara</h3>
+                        <p>Menawarkan paket buah segar untuk acara khusus seperti pernikahan dan pertemuan bisnis.</p>
+                        <p class="price">Mulai dari Rp. 100.000</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="10 persen.jpg" alt="Diskon Pelanggan Setia">
+                    <div>
+                        <h3>Diskon Pelanggan Setia</h3>
+                        <p>Diskon khusus untuk pelanggan setia yang berbelanja rutin.</p>
+                        <p class="price">Diskon 10%</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="paket khusus.jpg" alt="Pemesanan Khusus">
+                    <div>
+                        <h3>Pemesanan Khusus</h3>
+                        <p>Pesan buah lokal atau impor sesuai keinginan Anda dengan biaya tambahan.</p>
+                        <p class="price">Rp. 20.000 per jenis buah</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="product-cards" id="Products">
+            <h4>Daftar Produk</h4>
+            <div class="product-card-container">
+                <div class="product-card">
+                    <img src="apel.jpg" alt="Apel Fuji">
+                    <h3>Apel Fuji</h3>
+                    <p>Kategori : Buah Import</p>
+                    <p>Rp. 35.000,00/kg</p>
+                </div>
+                <div class="product-card">
+                    <img src="pisang.jpg" alt="Pisang Cavendish">
+                    <h3>Pisang Cavendish</h3>
+                    <p>Kategori : Buah Lokal</p>
+                    <p>Rp. 25.000,00/kg</p>
+                </div>
+                <div class="product-card">
+                    <img src="jeruk.jpg" alt="Jeruk Mandarin">
+                    <h3>Jeruk Mandarin</h3>
+                    <p>Kategori : Buah Import</p>
+                    <p>Rp. 45.000,00/kg</p>
+                </div>
+                <div class="product-card">
+                    <img src="alpukat.jpg" alt="Alpukat Mentega">
+                    <h3>Alpukat Mentega</h3>
+                    <p>Kategori : Buah Lokal</p>
+                    <p>Rp. 35.000,00/kg</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="Contact">
+            <h5>Hubungi Kami</h5>
+            <form>
+                <label for="name">Nama</label>
+                <input type="text" id="name" placeholder="Masukkan Nama" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Masukkan Email" required>
+                <label for="message">Pesan</label>
+                <textarea id="message" placeholder="Pesan Anda" required></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Rasa Buah | 2024 Hak Cipta Dilindungi</p>
+        <p>Alamat : Jl. Sehat Sejahtera No.188, Jakarta</p>
+        <p>Telepon : +62 123-456-7890</p>
+        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
